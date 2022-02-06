@@ -1,0 +1,146 @@
+.RoomCard {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 10px 20px;
+    padding: 12px;
+    border: 1px solid #a3a3a3;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.RoomCard:hover {
+    border-color: #828282;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    transition-duration: 200ms;
+}
+
+.CardImageContainer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 130px;
+    width: 240px;
+
+}
+
+.CardImageContainer img {
+    object-fit: cover;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.InfoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px 20px;
+    padding-right: 0;
+}
+
+.InfoContainer p {
+    padding-bottom: 3px;
+}
+
+.RoomName {
+    font-size: 20px;
+    font-weight: 450;
+}
+
+.InfoRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.RoomRating {
+    font-size: 15px;
+    font-weight: 400;
+    color: red;
+    padding-left: 2px;
+}
+
+.RoomReviewCount {
+    font-size: 12px;
+    padding: 1.5px 3px;
+}
+
+.RoomServeStyle {
+    font-size: 13px;
+    padding: 1.5px 3px;
+    font-weight: 350;
+}
+
+.RoomPrice {
+    font-size: 14px;
+    padding: 1px 3px;
+}
+
+.RoomNeighborhood {
+    font-size: 15px;
+    position: relative;
+    top: 1.5px;
+    padding-left: 2px;
+}
+
+.IconContainer {
+    display: flex;
+    height: 21px;
+    width: 16px;
+    justify-content: center;
+}
+
+.Star {
+    position: relative;
+    top: 1.25px;
+    color: red;
+}
+
+.LocationMarker {
+    position: relative;
+    top: 3.5px;
+}
+
+.MichelinStarContainer {
+    display: flex;
+    height: 21px;
+    width: 55px;
+    padding: 0px 3px;
+}
+
+.MichelinStar {
+    position: relative;
+    top: 3.5px;
+    height: 12px;
+    width: 12px;
+    padding: 0px 2px;
+
+}
+
+.RoomDetailsContainer {
+    display: flex;
+    height: 100%;
+    font-size: 15px;
+    font-weight: 300;
+    /*vertical-align: bottom;*/
+    align-items: flex-end;
+
+}
+
+@media (max-width: 640px) {
+    .RoomDetailsContainer {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 450px) {
+    .CardImageContainer {
+        height: 65px;
+        width: 110px;
+    }
+
+    .RoomServeStyle {
+        /*font-size: 10px;*/
+        display: none;
+    }
+}

@@ -1,0 +1,148 @@
+ul, li {
+    height: 20px;
+    width: 350px;
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    background: transparent;
+}
+a {
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+    color: #393c41;
+    background: transparent;
+    left: -65px;
+}
+
+
+@media (min-width: 721px) {
+    .NavbarContainer {
+        width: 500px;
+        display: contents;
+    }
+    a:after{
+        content: "";
+        position: absolute;
+        background-color: #3B3B3B;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+    }
+    a:hover {
+        color: #676a6f;
+    }
+    a:hover:after {
+        width: 100%;
+    }
+}
+
+.navBar {
+    position: absolute;
+    background-color: transparent;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+}
+
+
+@media (min-width: 985px) {
+    .navBar {
+        right: 0;
+        left: 0;
+    }
+}
+
+@media (max-width: 984px) and (min-width: 721px) {
+    .navBar {
+        right: 0;
+        left: 0;
+    }
+
+}
+
+
+@media (max-width: 720px) {
+    .navBar {
+        height: 100px;
+        top: 50px;
+        right: 0;
+        left: 0;
+    }
+
+    .navbar .ShowItem {
+        display: contents;
+    }
+
+    .HideItem {
+        display: none;
+    }
+
+    .HamButtonContainer {
+        height: 12px;
+        width: 24px;
+        display: flex;
+        background-color: transparent;
+        justify-content: flex-end;
+        position: absolute;
+        /*top: 5px;*/
+        right: 35px;
+    }
+
+    .NavbarContainer {
+        background-color: #3B3B3B;
+        position: absolute;
+        top: -15px;
+        right: 0px;
+        width: 103vw;
+        height: 6.5vh;
+        transition-property: height;
+        transition-duration: 0.3s;
+    }
+
+    .TransitionIn {
+        height: 37vh;
+    }
+
+    .NavbarContainer ul {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    li {
+        width: 200px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    li a {
+        width: 100px;
+        left: -20px;
+    }
+
+    .NavbarContainer ul li a {
+        flex-direction: column;
+        color: #F3EEE8;
+    }
+
+    ul li a:hover {
+        color: #C2BEB9;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .NavbarContainer {
+        width: 105vw;
+    }
+}
+
+
+
